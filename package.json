@@ -1,0 +1,23 @@
+{
+  "name": "haribo-web",
+  "version": "1.0.0",
+  "description": "Haribo web app",
+  "main": "src/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^4.2.1"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tictrac/haribo-web.git"
+  },
+  "author": "Team Haribo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tictrac/haribo-web/issues"
+  },
+  "homepage": "https://github.com/Tictrac/haribo-web#readme"
+}
