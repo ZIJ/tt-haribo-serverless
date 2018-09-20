@@ -15,7 +15,10 @@
       <p>{{ message }}</p>
       <ul>
         <li v-for="article in articles">
-          {{ article.title }}
+          <h3>
+            <a :href="article.url" >{{ article.title }}</a>
+          </h3>
+          <img :src="article.image_url" />
         </li>
       </ul>
   </div>
