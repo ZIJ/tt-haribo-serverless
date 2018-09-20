@@ -26,17 +26,18 @@
   <p id="target"></p>
   <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script>
-  var config = {
-    apiKey: "AIzaSyBIAu2xPuF9nFyg9lqINAomZpXM1y-o_q8",
-    authDomain: "tictrac-haribo.firebaseapp.com",
-    databaseURL: "https://tictrac-haribo.firebaseio.com",
-    projectId: "tictrac-haribo",
-    storageBucket: "tictrac-haribo.appspot.com",
-    messagingSenderId: "50953740110"
-  };
-  firebase.initializeApp(config);
-</script>
+  <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyBIAu2xPuF9nFyg9lqINAomZpXM1y-o_q8",
+      authDomain: "tictrac-haribo.firebaseapp.com",
+      databaseURL: "https://tictrac-haribo.firebaseio.com",
+      projectId: "tictrac-haribo",
+      storageBucket: "tictrac-haribo.appspot.com",
+      messagingSenderId: "50953740110"
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="main.js"></script>
 </body>
 
