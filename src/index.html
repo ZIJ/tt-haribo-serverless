@@ -13,7 +13,11 @@
 <body>
   <div id="app">
       <p>{{ message }}</p>
-      <p>{{ test_data }}</p>
+      <ul>
+        <li v-for="article in articles">
+          {{ article.title }}
+        </li>
+      </ul>
   </div>
   
   <p id="target"></p>
