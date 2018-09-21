@@ -4,6 +4,12 @@
 - Cloud Functions for handling push notifications
 - Dummy web app that mimics Timeline
 
+### Tech used
+- Google Cloud Functions (serverless!)
+- Firebase Real-time DB
+- Firebase FCM API
+- Vue.js for the dummy web app
+
 ### Cloud functions
 - sendVoteNotification - listens to write events in firebase and sends push notifications to target users to show the quiz
 - [HelloWorld](https://us-central1-tictrac-haribo.cloudfunctions.net/helloWorld) - just a hello world :)
