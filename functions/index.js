@@ -11,8 +11,11 @@ exports.sendVoteNotification = functions.database.ref('/article_votes/{voteId}')
     .onWrite((change, context) => {
         let messagePayload = {
             notification: {
-                title: 'Vote added',
-                body: 'No, seriously. Vote added!'
+                title: 'True or False?',
+                body: 'What do you think…',
+                content_available : true,
+                mutable_content: true,
+                priority : 'high'
             },
             topic: 'all'
         }
