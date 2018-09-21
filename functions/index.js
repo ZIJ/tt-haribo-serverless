@@ -9,7 +9,13 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 
 exports.sendVoteNotification = functions.database.ref('/article_votes/{voteId}')
     .onWrite((change, context) => {
-        admin.messaging().send("Vote added").then((response) => {
+        let messagePayload = {
+            notification: {
+                title: 'Vote added',
+                body: 'No, seriously. Vote added!'
+            }
+        }
+        admin.messaging().send(messagePayload).then((response) => {
             console.log(response);
         })
 });
