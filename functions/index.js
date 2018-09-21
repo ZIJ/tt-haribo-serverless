@@ -13,7 +13,8 @@ exports.sendVoteNotification = functions.database.ref('/article_votes/{voteId}')
             notification: {
                 title: 'Vote added',
                 body: 'No, seriously. Vote added!'
-            }
+            },
+            topic: 'all'
         }
         admin.messaging().send(messagePayload).then((response) => {
             console.log(response);
